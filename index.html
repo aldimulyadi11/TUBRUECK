@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>TUBRUECK</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/tubruck/logo.png" rel="icon">
+  <link href="assets/img/tubruck/logo.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <script src="script.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+    emailjs.init("user_kBednHf1sfLysjcNAjue8");
+    })();
+  </script>
+
+  <style>
+
+    /* Tombol Button Pesan */
+    #button {margin: 5% auto; width: 100px; text-align: center;}
+    #button a {
+      width: 100px;
+      height: 30px;
+      vertical-align: middle;
+      background-color: #F00;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid transparent;
+    }
+
+    /* Jendela Pop Up */
+    #popup {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      background: rgba(0,0,0,.7);
+      top: 0;
+      left: 0;
+      z-index: 9999;
+      visibility: hidden;
+    }
+
+    .windowsss {
+      width: 400px;
+      height: 100px;
+      background: #fff;
+      border-radius: 10px;
+      position: relative;
+      padding: 10px;
+      text-align: center;
+      margin: 15% auto;
+    }
+    .windowsss h2 {
+      margin: 30px 0 0 0;
+    }
+    /* Button Close */
+    .close-button {
+      width: 6%;
+      height: 20%;
+      line-height: 23px;
+      background: #000;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      display: block;
+      text-align: center;
+      color: #fff;
+      text-decoration: none;
+      position: absolute;
+      top: -10px;
+      right: -10px;	
+    }
+
+    /* Memunculkan Jendela Pop Up*/
+    #popup:target {
+      visibility: visible;
+    }
+
+  </style>
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  
+
+  <!-- =======================================================
+  * Template Name: BizPage - v5.3.0
+  * Template URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+  
+  <!-- ======= hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container" >
+      <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
+
+        <ol id="hero-carousel-indicators" class="carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <div class="carousel-item active" style="border-bottom:solid 1px #c45235;">
+            
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class=""><img src="assets/img/tubruck/tubruck-hitam.png" alt="" style="width: 120px;position: absolute;margin: auto;top: 0;left: 0;right: 0;bottom: 60%;" class="img-fluid"></h2>
+                <h5 class="" style="color:#c45235;font-weight: bold;font-family: Futura, Trebuchet MS, Arial, sans-serif; font-size: 130%;position: absolute;margin: auto;top: 35%;left: 0;right: 0;bottom: 0;">They take care, We deliver, You savor</h5>
+                <h5 class="animate__animated animate__fadeInUp" style="color:#c45235;font-weight: bold;font-family: Futura, Trebuchet MS, Arial, sans-serif; font-size: 130%;position: absolute;margin: auto;top: 50%;left: 0;right: 0;bottom: 0;">Your digital trusted platform to connect you with Indonesian coffe grower</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item" style="border-bottom:solid 1px #c45235;">
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class=""><img src="assets/img/tubruck/tubruck-hitam.png" alt="" style="width: 120px;position: absolute;margin: auto;top: 0;left: 0;right: 0;bottom: 60%;" class="img-fluid"></h2>
+                <h5 class="" style="color:#c45235;font-weight: bold;font-family: Futura, Trebuchet MS, Arial, sans-serif; font-size: 130%;position: absolute;margin: auto;top: 35%;left: 0;right: 0;bottom: 0;">They take care, We deliver, You savor</h5>
+                <h5 class="animate__animated animate__fadeInUp" style="color:#c45235;font-weight: bold;font-family: Futura, Trebuchet MS, Arial, sans-serif; font-size: 130%;position: absolute;margin: auto;top: 50%;left: 0;right: 0;bottom: 0;">In the future, all data wireless sensor networks (WSN), cloud computing, Internet of Things (IoT), image processing, remote sensing, traceability technology, and blockchain will be used in the coffe supply</h5>
+              </div>
+            </div>
+          </div>
+         
+          <div class="carousel-item" style="border-bottom:solid 1px #c45235;">
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class=""><img src="assets/img/tubruck/tubruck-hitam.png" alt="" style="width: 120px;position: absolute;margin: auto;top: 0;left: 0;right: 0;bottom: 60%;" class="img-fluid"></h2>
+                <h5 class="" style="color:#c45235;font-weight: bold;font-family: Futura, Trebuchet MS, Arial, sans-serif; font-size: 130%;position: absolute;margin: auto;top: 35%;left: 0;right: 0;bottom: 0;">They take care, We deliver, You savor</h5>
+                <div class="row about-cols">
+                  <div class="col-md-6" data-aos="fade-up" data-aos-delay="80">
+                    <div class="about-col">
+                      <div class="img">
+                        <img src="assets/img/tubruck/foto-1.jpg" alt="" class="img-fluid" style="width: 80%;height: 100%;position: relative;top: 100px;border-left: 12px solid #c45235;border-top: 12px solid #c45235;border-right:1px solid #c45235;border-bottom:1px solid #c45235;">
+                        <br><br>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6" data-aos="fade-up" data-aos-delay="80">
+                    <div class="about-col">
+                      <div class="img">
+                        <img src="assets/img/tubruck/foto-2.jpg" alt="" class="img-fluid" style="width: 80%;height: 100%;position: relative;top: 100px;border-left: 12px solid #c45235;border-top: 12px solid #c45235;border-right:1px solid #c45235;border-bottom:1px solid #c45235;">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+
+          <div class="carousel-item" style="border-bottom:solid 1px #c45235;">
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class=""><img src="assets/img/tubruck/tubruck-hitam.png" alt="" style="width: 120px;position: absolute;margin: auto;top: 0;left: 0;right: 0;bottom: 60%;" class="img-fluid"></h2>
+                <h5 class="" style="color:#c45235;font-weight: bold;font-family: Futura, Trebuchet MS, Arial, sans-serif; font-size: 130%;position: absolute;margin: auto;top: 35%;left: 0;right: 0;bottom: 0;">They take care, We deliver, You savor</h5>
+                <div class="row about-cols">
+                  <div class="col-md-6" data-aos="fade-up" data-aos-delay="80">
+                    <div class="about-col">
+                      <div class="img">
+                        <img src="assets/img/tubruck/foto-2.jpg" alt="" class="img-fluid" style="width: 80%;height: 100%;position: relative;top: 100px;border-left: 12px solid #c45235;border-top: 12px solid #c45235;border-right:1px solid #c45235;border-bottom:1px solid #c45235;">
+                        <br><br>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6" data-aos="fade-up" data-aos-delay="80">
+                    <div class="about-col">
+                      <div class="img">
+                        <img src="assets/img/tubruck/foto-1.jpg" alt="" class="img-fluid" style="width: 80%;height: 100%;position: relative;top: 100px;border-left: 12px solid #c45235;border-top: 12px solid #c45235;border-right:1px solid #c45235;border-bottom:1px solid #c45235;">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+          
+        </div>
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+    <section id="">
+      <div class="container" data-aos="fade-up">
+        <header class="section-header">
+          <br><br>
+          <h4 style="color: #c45235;font-weight: 800;font-family: Arial, Helvetica, sans-serif;text-align: center;">INDONESIAN COFFEE POTENCY</h4>
+        </header>
+        
+        <div class="row about-cols">
+          <div class="col-md-12" data-aos="fade-up" data-aos-delay="80">
+            <div class="about-col-12">
+              
+              <br><br><br>
+              <div class="img">
+                <img src="assets/img/tubruck/hal-2.jpg" alt="" class="img-fluid">
+              </div>
+              <!--<video style="width: 100%;" controls autoplay>-->
+              <!--  <source src="assets/img/tubruck/test.mp4" type="video/mp4">-->
+              <!--</video>-->
+              <br><br><br><br><br>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======= About Us Section ======= -->
+    <section class="history">
+     <div class="container" data-aos="fade-up" style="width: 80%;position: relative;left: 20px;">
+        <header class="section-header" id="abouts">
+            <br><br>
+          <h4 style="color: #c45235;font-family:Arial, Helvetica, sans-serif;text-align: center;font-weight: 800;">HISTORY OF TUBRUCK</h4>
+          <p style="width: 100%;text-align: justify;font-weight: bold;color: #c45235;font-family: Futura, Trebuchet MS, Arial, sans-serif;font-size:16px;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This company was initiated by our founder as he was working in Germany in early 2018, the initiation emerged based on the lack of information on Indonesian coffee but positive responses continued to arrive for Indonesian coffee. This opportunity created several other opportunities, such as the emergence of a sense of patriotism to the country through the desire to show the quality of Indonesian products, especially coffee, with the aim of improving the quality of life and the business of farmers in Indonesia to meet the needs of the coffee market in Europe by bringing together farmers and customers. directly through the help of Information Technology. In 2019 we participated in the WOC (World of Coffee) Berlin, Germany by collaborating with another Indonesian coffee brand to become one of the tenant participants in the activity with an unexpected response that the quality of Indonesian coffee received a positive response from various parties. Following on from the event, we have conducted sampling curation and scoring of Indonesian coffee with the assessment that Indonesian coffee is very worthy of being sold and enjoyed by the world. Based on the series of journeys that we have experienced, we are determined to be a portal for transactions and delivery of Indonesian coffee worldwide.
+            
+          </p>
+        </header>
+        
+        <header>
+          <h4 style="color: #c45235;font-weight: 800;font-family:Arial, Helvetica, sans-serif;text-align: center;">TYPE OF SERVICES</h4>
+        </header>
+        <div class="row">
+
+          <div class="col-lg-2 col-md-4 box" data-aos-delay="10">
+            <div class="img">
+              <center><img src="assets/img/tubruck/marketplace.png" alt="" width="200">
+              <p class="test" style="color: #c45235;font-weight: bold;font-family: Futura, Trebuchet MS, Arial, sans-serif;">Marketplace </p></center>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 box" data-aos="fade-up" data-aos-delay="10">
+            <div class="img">
+              <center><img src="assets/img/tubruck/media-transaction.png" alt="" width="200">
+              <p class="test" style="color: #c45235;font-weight: bold;font-family: Futura, Trebuchet MS, Arial, sans-serif;">Media Transactions </p></center>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 box" data-aos="fade-up" data-aos-delay="10">
+            <div class="img">
+              <center><img src="assets/img/tubruck/coffee-export.png" alt="" width="200">
+              <p class="test" style="color: #c45235;font-weight: bold;font-family: Futura, Trebuchet MS, Arial, sans-serif;">Coffee Export </p></center>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 box" data-aos="fade-up" data-aos-delay="10">
+            <div class="img">
+              <center><img src="assets/img/tubruck/coffee-tools.png" alt="" width="200">
+              <p class="test" style="color: #c45235;font-weight: bold;font-family: Futura, Trebuchet MS, Arial, sans-serif;">Coffee Tools </p></center>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 box" data-aos="fade-up" data-aos-delay="10">
+            <div class="img">
+              <center><img src="assets/img/tubruck/coffee-curation.png" alt="" width="200">
+              <p class="test" style="color: #c45235;font-weight: bold;font-family: Futura, Trebuchet MS, Arial, sans-serif;">Coffee Curation </p></center>
+            </div>
+          </div>
+          
+          <div class="col-lg-1 col-md-4 box" data-aos="fade-up" data-aos-delay="80">
+            <!-- <div class="img">
+              <center><img src="assets/img/tubruck/marketplace.png" alt="" width="200">
+              <label style="color: #c45235;font-weight: bold;font-family: Futura, Trebuchet MS, Arial, sans-serif;">Marketplace </label></center>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About Us Section -->
+<!-- 
+    <section style="background-color: rgb(0, 195, 255);">
+       -->
+    <section class="businessScale">
+      <div class="container">
+        
+        <div class="row counters">
+          
+          <div class="col-lg-1 col-1 text-center">
+            
+            <a style="font-weight: 800;font-family: Arial, Helvetica, sans-serif;display: block;color: #c45235;float: left;position: relative;right: 95%;top: 77%;" href="#abouts">About</a>
+            <a style="font-weight: 800;font-family: Arial, Helvetica, sans-serif;display: block;color: #c45235;float: left;position: relative;right: 95%;top: 77%;" data-toggle="modal" data-target="#modalMaintenance">Our&nbsp;Store</a>
+            <a style="font-weight: 800;font-family: Arial, Helvetica, sans-serif;display: block;color: #c45235;float: left;position: relative;right: 95%;top: 77%;" data-toggle="modal" data-target="#modalMaintenance">Growers&nbsp;Connect</a>
+            <a style="font-weight: 800;font-family: Arial, Helvetica, sans-serif;display: block;color: #c45235;float: left;position: relative;right: 95%;top: 77%;" data-toggle="modal" data-target="#modalEmail">Contact</a>
+            
+            <!-- Modal Maintenance-->
+            <div class="modal fade" id="modalMaintenance" tabindex="-1" role="dialog" aria-labelledby="modalMaintenanceTitle" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                  <div class="modal-content" style="border-radius: 20px;position: relative;top: 200px;">
+                  <div class="modal-body">
+                    <h1><span style="color: #c45235;border-radius: 100px;border: 2px solid #c45235;padding: 1% 5%;">!</span></h1>
+                    <p style="color: #c45235;"> Sorry, the page your request is under maintenance </p>
+                  </div>
+                  <div class="col-lg-12 text-center">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal" style="background-color: #c45235;">Close</button>
+                    <br><br>
+                  </div>
+                  </div>
+              </div>
+            </div>
+
+            <!-- End Modal Maintenance-->
+
+            <!-- Modal Email-->
+            <div class="modal fade" id="modalEmail" tabindex="-1" role="dialog" aria-labelledby="modalEmailTitle" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                  <div class="modal-content" style="border-radius: 10px;position: relative;top: 50px;">
+                    <div class="modal-body">
+                      <h4><span style="color: #c45235;">Email</span></h4>
+
+                      <div class="form" id="myForm">
+                        <form method="post" role="form" class="php-email-form" name="Form">
+                          <div class="row">
+                            <div class="form-group col-md-6">
+                              <input type="text" name="name" class="form-control btn-sm" id="name" placeholder="Full Name" required>
+                              <br>
+                            </div>
+                            <div class="form-group col-md-6">
+                              <input type="email" class="form-control btn-sm" name="email" id="email" placeholder="Email Address" required>
+                              <br>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <input type="text" class="form-control btn-sm" name="subject" id="subject" placeholder="Subject" required>
+                            <br>
+                          </div>
+                          <div class="form-group">
+                            <textarea class="form-control btn-sm" id="message" name="message" rows="5" placeholder="Your message here" required></textarea>
+                          </div>
+                          <br>
+                          <div class="text-center"><button class="btn btn-sm" style="background-color: #c45235;color: white;" value="Send Mail" onclick="sendMail()">Send Message</button></div>
+                        </form>
+                      </div>
+
+                    </div>
+                  </div>
+              </div>
+            </div>
+
+            <!-- End Modal Email-->
+            
+            
+          </div>
+          <div class="col-lg-11 col-11 text-center">
+            <div class="img">
+              <img src="assets/img/tubruck/bs-1.png" alt="" class="img-fluid" style="width: 82%;">
+            </div>
+          </div>
+        </div>
+
+        </div>
+      </section>
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" style="background-color:#c45235;">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Tubrueck</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- Uncomment below i you want to use a preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
